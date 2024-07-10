@@ -1,4 +1,8 @@
 /*global*/
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     align-items: center;
     font-family:"Arial", sans-serif;
@@ -14,6 +18,10 @@ img{
 p{
     line-height: 2;
 }
+h2, h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 header a{
     color: white;
     text-decoration: none;
@@ -24,44 +32,56 @@ main a,footer a{
     background-color:black;
     text-decoration: none;
     padding:10px;
+    margin-bottom:10px;
     display: inline-block;
 }
-.main_flex{
+.main-flex{
     display:flex;
     flex-direction:row;
     justify-content:space-between;
 }
-#blog_posts{
+.blog-posts{
     flex: 4;
     padding-right: 20px;
 }
-#courses{
+.courses{
     flex: 1;
 }
-#courses a,h2{
+.courses a,h2{
     font-size:medium;
 }
 /*utilities*/
+.nav-bar{
+    width:60%;
+    margin:0 auto;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    padding:10px;
+}
 hr{
     border: 1px solid lightgray;
     width:auto;
     margin: 10px 20% 10px 20%;
 }
+.text-b{
+    font-weight: bold;
+}
 /*Contact*/
-.contact_flex {
+.contact-flex {
     display: flex;
     position: relative; /* Make the container the positioning context for the form */
     align-items: center; /* Align form vertically in the center */
 }
 
-.contact_flex img {
+.contact-flex img {
     width: 100%; /* Or set a specific width for the image */
     height: auto;  /* Maintain aspect ratio */
 }
 
-.contact_flex form {
+.contact-flex form {
     position: absolute; /* Position form relative to the container */
-    top:25%;
+    top: 25%;
     left: 25%;
     width: 40%;     /* Adjust to control form width */
     background-color: white; /* Semi-transparent white background */
@@ -101,7 +121,7 @@ header{
     background-size: contain;
     display:grid;
 }
-#intro{
+.intro{
     place-items: center;
 }
 /*footer*/
@@ -110,13 +130,5 @@ footer{
     background-color: black;
     color: white;
     text-align: center;
-    height: 75px;
 }
-.site_info{
-    width:60%;
-    margin:0 auto;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    padding:10px;
-}
+
